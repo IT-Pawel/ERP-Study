@@ -1,0 +1,142 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: bisque;
+}
+
+main{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: darkgreen;
+    transition: $transtion-standard;
+    &:hover,
+    &:focus {
+        color: mediumspringgreen;
+    }
+}
+
+input[type="submit"],.btn {
+    color: red;
+    transition: $transtion-standard;
+    padding: 8px 12px;
+    &:hover,
+    &:focus {
+        color: mediumspringgreen;
+        background-color: chocolate;
+    }
+    background-color: blueviolet;
+}
+
+.login-form,
+.register-form,
+.update-form {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 12px;
+    }
+    input {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.update-form{
+    .send{
+        margin-top: 20px;
+    }
+}
+
+
+.warning {
+    color: red;
+    text-align: center;
+    margin: 40px auto 0;
+    font-size: 40px;
+}
+
+.brief{
+    &-table{
+        width: 100%;
+        td{
+            text-align: center;
+            form{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-from{
+        border: 3px solid red;
+        background-color: antiquewhite;
+        .tytul {
+            padding: 6px 12px;
+        }
+        .send {
+            transition: $transtion-standard;
+            background: white;
+            color: black;
+            border: unset;
+            &:hover,
+            &:focus {
+                background: rgb(32, 65, 12);
+                color: rgb(150, 65, 12);
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+.header{
+    padding: 20px;
+    text-align: center;
+    background-color: blue;
+    a{
+        text-decoration: none;
+        transition: $transtion-standard;
+        &:not(:last-child){
+            padding-right: 20px;
+        }
+    }
+}
+
+.account{
+    h1{
+        text-align: center;
+    }
+    
+}
+
+
+.users{
+    &-table{
+        width: 100%;
+        td{
+            text-align: center;
+            form{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

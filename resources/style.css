@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: bisque;
+  font-size: 24px;
+}
+
+main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: darkgreen;
+  transition: 0.3s ease;
+}
+a:hover, a:focus {
+  color: mediumspringgreen;
+}
+
+input[type=submit], .btn {
+  color: red;
+  transition: 0.3s ease;
+  padding: 8px 12px;
+  background-color: blueviolet;
+}
+input[type=submit]:hover, input[type=submit]:focus, .btn:hover, .btn:focus {
+  color: mediumspringgreen;
+  background-color: chocolate;
+}
+
+.login-form,
+.register-form,
+.update-form {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.login-form__wrapper,
+.register-form__wrapper,
+.update-form__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-form h1,
+.register-form h1,
+.update-form h1 {
+  margin-bottom: 12px;
+}
+.login-form input:not(:last-child),
+.register-form input:not(:last-child),
+.update-form input:not(:last-child) {
+  margin-bottom: 12px;
+}
+.login-form fieldset,
+.register-form fieldset,
+.update-form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-form .send {
+  margin-top: 20px;
+}
+
+.warning {
+  color: red;
+  text-align: center;
+  margin: 40px auto 0;
+  font-size: 40px;
+}
+
+.brief-table {
+  width: 100%;
+}
+.brief-table td {
+  text-align: center;
+}
+.brief-table td form {
+  margin-bottom: 0;
+}
+.brief-from {
+  border: 3px solid red;
+  background-color: antiquewhite;
+}
+.brief-from .tytul {
+  padding: 6px 12px;
+}
+.brief-from .send {
+  transition: 0.3s ease;
+  background: white;
+  color: black;
+  border: unset;
+}
+.brief-from .send:hover, .brief-from .send:focus {
+  background: rgb(32, 65, 12);
+  color: rgb(150, 65, 12);
+  transform: scale(1.2);
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: blue;
+}
+.header a {
+  text-decoration: none;
+  transition: 0.3s ease;
+  color:red;
+}
+
+.header a:hover {
+  text-decoration: none;
+
+  color:white;
+}
+.header a:not(:last-child) {
+  padding-right: 20px;
+}
+
+.account h1 {
+  text-align: center;
+}
+
+.users-table {
+  width: 100%;
+}
+.users-table td {
+  text-align: center;
+}
+.users-table td form {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
